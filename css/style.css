@@ -36,7 +36,7 @@ body {
     width: 100%;
     font-size: 100%;
     line-height: 1;
-    font-size: 14px;
+    font-size: 16px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -92,26 +92,108 @@ h6 {
 
 /*Загальні стилі*/
 
-.page_title {
-    text-transform: uppercase;
-    line-height: 2rem;
-    letter-spacing: 0.1875rem;
-    color: #EF6D58;
-    font-weight: 400;
-    font-size: 1rem;
+[class*="_light"] {
+    font-family: Epilogue;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-style: normal;
+    color: #391400;
 }
 
 h1 {
     font-size: 4.5rem;
-    color: #fff;
     font-weight: 800;
     line-height: 5rem;
     letter-spacing: -0.125rem;
 }
 
+h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 4rem;
+    letter-spacing: -0.0625rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h5 {
+    color: #EF6D58;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+}
+
+[class*="label"] {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+[class*="text_big"] {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+[class*="text_regular"] {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+
+.text_gray_light {
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.text_gray_small_light {
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+[class*="_dark"] {
+    font-family: Epilogue;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-style: normal;
+    color: #fff;
+}
+
+.text_gray_dark {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+
+.text_gray_small_dark {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+
 .default__button {
-    min-width: 9.625rem;
-    min-height: 48px;
+    width: 10.625rem;
+    height: 3rem;
     background: #EF6D58;
     border-radius: 0.375rem;
     text-transform: uppercase;
@@ -119,6 +201,19 @@ h1 {
     font-weight: 900;
     text-align: center;
     color: #fff;
+}
+
+.default__button_white {
+    height: 3rem;
+    min-width: 8.625rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #391400;
+    background: #fff;
+    border-radius: 0.375rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 900;
+    text-align: center;
 }
 
 .text_grey {
@@ -135,11 +230,23 @@ h1 {
     color: #fff;
 }
 
+.text_brown {
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.horizontal_row_orange {
+    border-bottom: 0.0625rem solid #F3D1BF;
+    height: 0.0625rem;
+    display: block;
+}
+
+
 [class*="__container"] {
     /* Обмежуючий контейнер + відступи */
-    width: 73.125rem;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    max-width: 73.125rem;
     margin: 0 auto;
 }
 
@@ -157,12 +264,13 @@ body {
 }
 
 .header {
-    background-color: #28293E;
+    background: #28293E;
     position: fixed;
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     max-height: 7rem;
+    z-index: 100;
 }
 
 .header__container {
@@ -184,7 +292,6 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 2rem;
-
 }
 
 .header_logo_image {
@@ -195,7 +302,6 @@ body {
 .nav_bar {
     display: flex;
     align-items: center;
-
 }
 
 .nav_buttons {
@@ -220,14 +326,15 @@ body {
     font-weight: 900;
 }
 
-.main {}
-
 .main-page {
+    background: #FDF0E9;
+}
+
+.modern-studio_section {
     background: #28293E;
-    height: 55rem;
+    height: 100%;
     padding-top: 11.125rem;
     padding-bottom: 4rem;
-
 }
 
 .modern-studio__container {
@@ -237,16 +344,16 @@ body {
     position: relative;
 }
 
-.modern-studio_content {
-    background: transparent;
-
+.modern-studio_content_title {
+    position: relative;
+    z-index: 6;
 }
-
 
 .modern-studio_content_star {
     position: absolute;
     top: 0.9375rem;
-    left: 16.875rem;
+    left: 17.5rem;
+    z-index: 3;
 }
 
 .modern-studio_content * {
@@ -265,6 +372,7 @@ body {
     flex-direction: row;
     gap: 1rem;
     align-items: center;
+    padding-bottom: 0;
 }
 
 .modern-studio_quote img {
@@ -283,4 +391,143 @@ body {
     padding-bottom: 0;
 }
 
-.footer {}
+/* Головна секція*/
+
+/*Секція About*/
+.main-section_about {
+    padding-bottom: 8.75rem;
+}
+
+.main-section_about_brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4.75rem;
+    margin-bottom: 4.625rem;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-section_about_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6.3125rem;
+    margin-bottom: 10.0625rem;
+    justify-content: space-between;
+}
+
+.main-section_about_content img {
+    max-width: 35.375rem;
+}
+
+.main-section_about_content_textarea {
+    width: 29.375rem;
+}
+
+.MS_about_title_h5 {
+    margin-bottom: 1.25rem;
+}
+
+.MS_about_title_h2 {
+    margin-bottom: 1.625rem;
+}
+
+.MS_about_text_big_light {
+    margin-bottom: 1.125rem;
+}
+
+.MS_about_text_gray_light {
+    margin-bottom: 2.125rem;
+}
+
+.MS_about_stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-section_about_stats_value {
+    width: 24.4375rem;
+    height: 11rem;
+    border: 0.0625rem solid #F3D1BF;
+    padding-top: 2.8125rem;
+    padding-bottom: 2.375rem;
+    padding-left: 3rem;
+}
+
+.main-section_about_stats_value:nth-of-type(1) {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.main-section_about_stats_value:nth-of-type(3) {
+    border-radius: 0px 6px 6px 0px;
+}
+
+/* Секція How We Work */
+
+.main-section_how-we-work {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6.75rem;
+    height: 23.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-section_hww_content {
+    width: 29.375rem;
+}
+
+.MS_hww_title_h5 {
+    padding-bottom: 1.0625rem;
+}
+
+.MS_hww_title_h3 {
+    padding-bottom: 1.9375rem;
+}
+
+.MS_hww_text_gray_light {
+    padding-bottom: 1.75rem;
+}
+
+.MS_hww_list {
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(3, 80px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    row-gap: 2rem;
+}
+
+.MS_hww_list_number_1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.MS_hww_list_number_2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.MS_hww_list_number_3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.MS_hww_list_item_1 {
+    padding-left: 3.375rem;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.MS_hww_list_item_2 {
+    padding-left: 3.375rem;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.MS_hww_list_item_3 {
+    padding-left: 3.375rem;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.MS_hww_list_item {}
