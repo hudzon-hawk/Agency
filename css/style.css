@@ -61,7 +61,11 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-a,
+a {
+    text-decoration: none;
+
+}
+
 a:visited {
     text-decoration: none;
 }
@@ -288,8 +292,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #fff;
     line-height: 2rem;
+}
+
+.nav_buttons a {
+    color: #fff;
+    cursor: pointer;
+
 }
 
 .contact_button {
@@ -624,13 +633,16 @@ body {
     justify-content: space-between;
     margin-bottom: 13.3125rem;
 }
+
 .MS_features_2_content {
     width: 31.25rem;
     justify-self: flex-start;
 }
+
 .MS_features_2_title_h5 {
     margin-bottom: 1.875rem;
 }
+
 .MS_features_2_text_big_light {
     width: 23.125rem;
     margin-bottom: 1.75rem;
@@ -647,10 +659,11 @@ body {
 }
 
 .MS_features_2_professional img {
-   padding-bottom: 2.5625rem; 
+    padding-bottom: 2.5625rem;
 }
-.MS_features_2_h4_light {
-}
+
+.MS_features_2_h4_light {}
+
 .MS_features_1_text_gray_light {
     width: 15rem;
     padding-top: 1.1875rem;
