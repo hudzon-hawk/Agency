@@ -216,33 +216,11 @@ h5 {
     text-align: center;
 }
 
-.text_grey {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 2rem;
-    color: rgba(255, 255, 255, 0.64);
-}
-
-.text_white {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 2rem;
-    color: #fff;
-}
-
-.text_brown {
-    color: rgba(57, 20, 0, 0.64);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 2rem;
-}
-
 .horizontal_row_orange {
     border-bottom: 0.0625rem solid #F3D1BF;
     height: 0.0625rem;
     display: block;
 }
-
 
 [class*="__container"] {
     /* Обмежуючий контейнер + відступи */
@@ -530,17 +508,21 @@ body {
     grid-area: 3 / 2 / 4 / 3;
 }
 
+/* Секція  Video Reel */
+
 .main-section_video-reel {
     display: flex;
     flex-direction: row;
-
+    margin-top: 7.9375rem;
+    margin-bottom: 13.4375rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .video {
     display: block;
     width: 100%;
     height: 100%;
-
 }
 
 .video-player {
@@ -550,9 +532,11 @@ body {
 }
 
 .play-button {
-    opacity: 0.1;
-    transition: opacity 0.5s ;
-    font-size: 50px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 3.125rem;
     color: #fff;
     position: absolute;
     top: 110px;
@@ -567,5 +551,120 @@ body {
 
 .play-button:hover {
     opacity: 1;
-    
+}
+
+.MS_video-reel_content {
+    width: 29.375rem;
+}
+
+.MS_video-reel_title_h5 {
+    margin-bottom: 1.0625rem;
+}
+
+.MS_video-reel_title_h3 {
+    margin-bottom: 1.75rem;
+}
+
+/* Секція Features 1 */
+.main-section_features_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12.625rem;
+}
+
+.main-section_features_1 img {
+    width: 33.0625rem;
+
+}
+
+.main-section_features_1_content {
+    width: 29.375rem;
+}
+
+.MS_features_1_title_h5 {
+    margin-bottom: 1.25rem;
+}
+
+.MS_features_1_title_h2 {
+    margin-bottom: 1.625rem;
+}
+
+.MS_features_1_text_big_light {
+    margin-bottom: 1.625rem;
+}
+
+.MS_features_1_text_gray_light {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.MS_features_1_text_gray_light li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    height: 2rem;
+}
+
+.MS_features_1_text_gray_light li::before {
+    content: url("/img/home_agency/main-section_features_1/check.svg");
+    margin-right: 1rem;
+    height: 2rem;
+}
+
+/* Секція Features 2 */
+
+.main-section_features_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 21rem;
+    justify-content: space-between;
+    margin-bottom: 13.3125rem;
+}
+.MS_features_2_content {
+    width: 31.25rem;
+    justify-self: flex-start;
+}
+.MS_features_2_title_h5 {
+    margin-bottom: 1.875rem;
+}
+.MS_features_2_text_big_light {
+    width: 23.125rem;
+    margin-bottom: 1.75rem;
+}
+
+.MS_features_2_professional {
+    width: 21rem;
+    background-color: #fff;
+    height: 100%;
+    padding: 48px;
+    border: 1px solid #F3D1BF;
+    border-radius: 6px 6px 0px 6px;
+    box-shadow: 0px 32px 64px 0px rgba(57, 20, 0, 0.04);
+}
+
+.MS_features_2_professional img {
+   padding-bottom: 2.5625rem; 
+}
+.MS_features_2_h4_light {
+}
+.MS_features_1_text_gray_light {
+    width: 15rem;
+    padding-top: 1.1875rem;
+}
+
+.MS_features_2_accessibility {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 21rem;
+    height: 17rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    border: 1px solid #F3D1BF;
+    border-radius: 0px 6px 6px 0px;
 }
