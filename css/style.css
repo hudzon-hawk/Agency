@@ -618,7 +618,7 @@ body {
 }
 
 .MS_features_1_text_gray_light li::before {
-    content: url("/img/home_agency/main-section_features/check.svg");
+    content: url("img/home_agency/main-section_features/check.svg");
     margin-right: 1rem;
     height: 2rem;
 }
