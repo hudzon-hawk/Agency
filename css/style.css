@@ -158,18 +158,19 @@ h5 {
 }
 
 
-.text_gray_light {
-    color: rgba(57, 20, 0, 0.64);
+.text_gray_lighter {
     font-size: 1rem;
-    font-weight: 400;
     line-height: 2rem;
 }
 
-.text_gray_small_light {
-    color: rgba(57, 20, 0, 0.64);
+.text_gray_small_lighter {
     font-size: 0.875rem;
-    font-weight: 400;
     line-height: 1.5rem;
+}
+
+[class*="_lighter"] {
+    color: rgba(57, 20, 0, 0.64);
+    font-weight: 400;
 }
 
 [class*="_dark"] {
@@ -179,21 +180,20 @@ h5 {
     color: #fff;
 }
 
-.text_gray_dark {
-    color: rgba(255, 255, 255, 0.64);
+.text_gray_darker {
     font-size: 1rem;
-    font-weight: 400;
     line-height: 2rem;
 }
 
-
-.text_gray_small_dark {
-    color: rgba(255, 255, 255, 0.64);
+.text_gray_small_darker {
     font-size: 0.875rem;
-    font-weight: 400;
     line-height: 1.5rem;
 }
 
+[class*="_darker"] {
+    color: rgba(255, 255, 255, 0.64);
+    font-weight: 400;
+}
 
 .default__button {
     width: 10.625rem;
@@ -631,7 +631,6 @@ body {
     align-items: center;
     height: 21rem;
     justify-content: space-between;
-    margin-bottom: 13.3125rem;
 }
 
 .MS_features_2_content {
@@ -678,4 +677,155 @@ body {
     padding-left: 3rem;
     border: 1px solid #F3D1BF;
     border-radius: 0px 6px 6px 0px;
+}
+
+/* Секція Service 1 */
+
+
+.main-section_service_1 {
+    margin-top: 6.25rem;
+
+}
+
+.MS_service_1_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MS_service_1_content img {
+    max-width: 36.25rem;
+}
+
+.MS_service_1_content_textarea {
+    max-width: 29.375rem;
+}
+
+.MS_service_1_title_h5 {
+    margin-bottom: 1.25rem;
+}
+
+.MS_service_1_title_h2 {
+    margin-bottom: 1.625rem;
+}
+
+.MS_service_1_text_big_light {
+    margin-bottom: 1.9375rem;
+}
+
+.MS_service_1_quote {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.MS_service_1_quote img {
+    width: 4rem;
+}
+
+.MS_service_1_quote_text {
+    padding-top: 0.5rem;
+    padding-left: 1.25rem;
+    max-width: 24.125rem;
+}
+
+.MS_service_1_text_gray_small_light {
+    padding-bottom: 0.75rem;
+}
+
+.MS_service_1_text_regular_light {
+    padding-bottom: 2.25rem;
+}
+
+/* Секція Service 2 */
+
+.main-section_service_2 {
+    padding-top: 8.8125rem;
+    padding-bottom: 8rem;
+}
+
+.MS_service_2_title_h5 {
+    padding-bottom: 1.0625rem;
+}
+
+.MS_service_2_title_h3 {
+    padding-bottom: 2.1875rem;
+    width: 21rem;
+}
+
+.MS_service_2_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #F3D1BF;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.MS_service_2_content_item {
+
+    padding: 3rem;
+    width: 24.4375rem;
+    height: 25rem;
+}
+
+
+.MS_service_2_content_item:nth-of-type(2) {
+    border-left: 1px solid #F3D1BF;
+    border-right: 1px solid #F3D1BF;
+}
+
+
+.MS_service_2_content_item_image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2.5625rem;
+}
+
+.MS_service_2_content_item_title {
+    margin-bottom: 1.1875rem;
+}
+
+.MS_service_2_content_text_gray {
+    margin-bottom: 1.625rem;
+}
+
+.MS_service_2_content_link {
+    color: #391400;
+}
+
+
+.portfolio-events-team_section {
+    background: #28293E;
+
+}
+.portfolio-events-team__container {
+}
+.PET-section_portfolio {
+    padding-top: 5.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PET-section_portfolio_title_h5 {
+    margin-bottom: 1.25rem;
+}
+.PET-section_portfolio_title_h2_dark {
+    margin-bottom: 2.25rem;
+}
+.PET-section_portfolio_filter_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35.875rem;
+}
+
+
+
+
+.PET-section_events {
+}
+.PET-section_team {
+}
+.PET-section_founder {
 }
