@@ -799,20 +799,24 @@ body {
     background: #28293E;
 
 }
-.portfolio-events-team__container {
-}
+
+.portfolio-events-team__container {}
+
 .PET-section_portfolio {
     padding-top: 5.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .PET-section_portfolio_title_h5 {
     margin-bottom: 1.25rem;
 }
+
 .PET-section_portfolio_title_h2_dark {
     margin-bottom: 2.25rem;
 }
+
 .PET-section_portfolio_filter_menu {
     display: flex;
     flex-direction: row;
@@ -820,12 +824,60 @@ body {
     width: 35.875rem;
 }
 
+.PET-section_portfolio_gallery {
+    margin-top: 4.25rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 29.375rem 12.5rem 29.375rem;
+    grid-template-rows: repeat(2, 26rem);
+    grid-column-gap: 1.875rem;
+    grid-row-gap: 2rem;
+}
+
+.gallery_item_1 {
+    background-image: url("/img/home_agency/PET-section_portfolio/sofa.png");
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.gallery_item_2 {
+    background-image: url("/img/home_agency/PET-section_portfolio/keyboard.png");
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.gallery_item_3 {
+    background-image: url("/img/home_agency/PET-section_portfolio/workmedia.png");
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.gallery_item_4 {
+    background-image: url("/img/home_agency/PET-section_portfolio/dddone.png");
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.PET-section_portfolio_gallery_item {
+   border-radius: 0.375rem;
+    padding-left: 3rem;
+    padding-bottom: 3.1875rem;
+    padding-top: 16rem;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
 
 
+.oval_white_button {
+    border-radius: 1.1875rem;
+    background: #fff;
+    width: 5.25rem;
+    height: 2.375rem;
+    color: #391400;
+    font-size: 1rem;
+    margin-bottom: 1.4375rem;
+}
 
-.PET-section_events {
-}
-.PET-section_team {
-}
-.PET-section_founder {
-}
+.PET-section_events {}
+
+.PET-section_team {}
+
+.PET-section_founder {}
